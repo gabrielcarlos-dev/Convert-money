@@ -29,7 +29,7 @@ const convertValues = () => {
     if (select.value === 'Bitcoin') {
         currencyValueText.innerHTML = new Intl.NumberFormat("de-DE",
             { style: "currency", currency: "BTC" }
-        ).format(inputReais / bitcoin);
+        ).format(inputReais * bitcoin);
     }
 
 }
